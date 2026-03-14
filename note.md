@@ -109,6 +109,7 @@ Sau khi đăng nhập, ta cũng có những thao tác tương tự như GUI vớ
 
 ### 2. Linux
 **Terminal**
+
 <img src="./images/2026-03-14-10-45-24.png" style="display: block; margin: 0 auto;">
 
 Tương tự như như `CMD` trên Windows, lệnh truy cập của Linux là:
