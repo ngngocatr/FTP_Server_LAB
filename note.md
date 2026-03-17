@@ -154,5 +154,32 @@ Ví dụ muốn coppy file `test.txt` vào thư mục `/home`:
 
 <img src="./images/2026-03-14-11-06-25.png" style="display: block; margin: 0 auto;">
 
+## 3. Dùng WireShark bắt gói tin FTP
 
+<img src="./images/2026-03-17-22-25-30.png" style="display: block; margin: 0 auto;">
 
+Mở **WireShark** nhập vào trường Filter `ftp` để lọc các gói tin của giao thức **FTP**
+
+<img src="./images/2026-03-17-22-27-19.png" style="display: block; margin: 0 auto;">
+
+Nhấn vào nút `Start Capture` có biểu tượng vây cá mập ở trên cùng bên phải của tab, chọn `Continue without Saving` rồi bắt đầu thực hiện thao tác
+
+<img src="./images/2026-03-17-22-29-19.png" style="display: block; margin: 0 auto;">
+
+Chuyển sang máy Linux và thực hiện thao tác kết nối và đăng nhập tài khoản `Administrator`
+
+<img src="./images/2026-03-17-22-30-31.png" style="display: block; margin: 0 auto;">
+
+Ở máy **FTP Server** kiểm tra WireShark ta thấy đã bắt được những gói tin về thao tác đăng nhập với giao thức **FTP**  
+
+<img src="./images/2026-03-17-22-34-56.png" style="display: block; margin: 0 auto;">
+
+Tiếp theo là thực hiện thao tác chuyển file từ máy **Linux** sang **File Server** 
+
+<img src="./images/2026-03-17-22-43-51.png" style="display: block; margin: 0 auto;">
+
+Ta capture được những gói tin, trong đó nội dung của file ở trong gói tin có giao thức `FTP-DATA`
+
+<img src="./images/2026-03-17-22-45-01.png" style="display: block; margin: 0 auto;">
+
+Click vào gói tin đó ta có thể nhìn thấy toàn bộ nội dung của file
